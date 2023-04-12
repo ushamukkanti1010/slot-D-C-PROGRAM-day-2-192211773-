@@ -1,0 +1,44 @@
+#include<stdio.h>
+
+void print_square_star(int side)
+{
+    int i, j;
+
+    for(i=1; i<=side; i++)
+    {
+        for(j=1; j<=side; j++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+}
+
+void print_rectangular_dollar(int rows, int columns)
+{
+    int i, j;
+
+    for(i=1; i<=rows; i++)
+    {
+        for(j=1; j<=columns; j++)
+        {
+            printf("$ ");
+        }
+        printf("\n");
+    }
+}
+
+int main()
+{
+    int side, rows, columns;
+
+    printf("Enter the side of the square: ");
+    scanf("%d",&side);
+
+    printf("Square star pattern:\n");
+    print_square_star(side);
+
+    printf("\nEnter the number of rows and columns of the rectangle: ");
+    scanf("%d %d",&rows,&columns);
+
+    printf("
