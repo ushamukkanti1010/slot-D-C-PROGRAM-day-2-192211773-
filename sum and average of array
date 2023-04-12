@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+  int arr[5] = { 10, 20, 30, 40, 50 };
+  int sum = 0;
+  float avg;
+
+  // calculate sum of array elements
+  for(int i = 0; i < 5; i++) {
+    sum += arr[i];
+  }
+
+  // calculate average of array elements
+  avg = (float)sum / 5;
+
+  // print the sum and average
+  printf("Sum of array elements is: %d\n", sum);
+  printf("Average of array elements is: %.2f\n", avg);
+
+  return 0;
+}
